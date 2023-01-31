@@ -53,14 +53,14 @@ export default function Layout({ children }) {
           >
             <nav className="main-header navbar navbar-expand navbar-white navbar-light sticky-top">
               <ul className="navbar-nav">
-                <Link href="/">
+                <a href="/">
                   <li className="nav-item mt-3">
                     <h4>
                       <i className=" fas fa-solid fa-circle text-success"></i>{" "}
                       {usuario && usuario.nome}
                     </h4>
                   </li>
-                </Link>
+                </a>
 
                 {/* <li className="nav-item dropdown">
             <a

@@ -77,7 +77,7 @@ export default function Home({ id }) {
         text: Text ? Text : "none",
         sender: id,
         empresaname: empresanome,
-        reciver: "gsmart",
+        reciver: "G-LAB",
         createdTime: new Date(),
       }),
     });
@@ -119,7 +119,7 @@ export default function Home({ id }) {
   return (
     <div className="container">
       <Head>
-        <title>Gsmart</title>
+        <title>G-LAB</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -145,11 +145,11 @@ export default function Home({ id }) {
                   {messages &&
                     messages.map((m) => (
                       <>
-                        {m.sender == "gsmart" ? (
+                        {m.sender == "G-LAB" ? (
                           <div className="direct-chat-msg">
                             <div className="direct-chat-infos clearfix ">
                               <span className="direct-chat-name float-left">
-                                "Gsmart"
+                                "G-LAB"
                               </span>
                               <span className="direct-chat-timestamp float-left ml-3">
                                 {timeAgo.format(new Date(m.createdTime))}
